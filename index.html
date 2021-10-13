@@ -22,20 +22,22 @@
   </head>
   <body>
     <header class="page-header">
-
       <!-- Навигация по сайту -->
 
       <div class="container">
         <div class="container-flex">
           <nav class="navigation">
-
             <a class="logo" href="./index.html" lang="en">
               <span class="logo__name logo__name--style">Web</span>Studio
             </a>
 
             <ul class="site-nav">
               <li class="site-nav__list">
-                <a class="site-nav__link site-nav__link--style" href="./index.html">Студия</a>
+                <a
+                  class="site-nav__link site-nav__link--style"
+                  href="./index.html"
+                  >Студия</a
+                >
               </li>
 
               <li class="site-nav__list">
@@ -46,9 +48,8 @@
                 <a class="site-nav__link" href="">Контакты</a>
               </li>
             </ul>
-
           </nav>
-          
+
           <!-- Контакты -->
 
           <ul class="contacts">
@@ -70,7 +71,6 @@
               </a>
             </li>
           </ul>
-
         </div>
       </div>
     </header>
@@ -128,14 +128,20 @@
                 </label>
 
                 <label class="modal-form__policy">
-                  <input class="modal-form__checkbox" type="checkbox" name="policy" />
+                  <input
+                    class="modal-form__checkbox"
+                    type="checkbox"
+                    name="policy"
+                  />
                   <span class="modal-form__icon-check"></span>
                   <span class="modal-form__term">
                     Соглашаюсь с рассылкой и принимаю
                   </span>
                   <a class="modal-form__link-term" href="">Условия договора</a>
                 </label>
-                <button class="modal-form__send-button" type="submit">Отправить</button>
+                <button class="modal-form__send-button" type="submit">
+                  Отправить
+                </button>
               </form>
             </div>
           </div>
@@ -145,58 +151,58 @@
       <section class="section">
         <div class="container">
           <h2 class="hidden">Преимущества</h2>
-          <ul class="features-list">
-            <li class="list">
-              <div class="background-icon">
-                <svg class="feature-icon" width="70px" height="70px">
+          <ul class="features">
+            <li class="features__list">
+              <div class="features__background-icon">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
 
-              <h3 class="section-subtitle">Внимание к деталям</h3>
-              <p class="section-text">
+              <h3 class="features__subtitle">Внимание к деталям</h3>
+              <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
 
-            <li class="list">
-              <div class="background-icon">
-                <svg class="feature-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__background-icon">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
 
-              <h3 class="section-subtitle">Пунктуальность</h3>
-              <p class="section-text">
+              <h3 class="features__subtitle">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
 
-            <li class="list">
-              <div class="background-icon">
-                <svg class="feature-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__background-icon">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
 
-              <h3 class="section-subtitle">Планирование</h3>
-              <p class="section-text">
+              <h3 class="features__subtitle">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
 
-            <li class="list">
-              <div class="background-icon">
-                <svg class="feature-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__background-icon">
+                <svg class="features__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
 
-              <h3 class="section-subtitle">Современные технологии</h3>
-              <p class="section-text">
+              <h3 class="features__subtitle">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -205,46 +211,44 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section section-gap">
+      <section class="section section--gap">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="images-list">
-            <li class="image">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="images">
+            <li class="images__item">
               <img
                 src="./images/img-one.jpg"
                 alt="Человек печатает на клавиатуре"
               />
-              <p class="image-description">Десктопные приложения</p>
+              <p class="images__description">Десктопные приложения</p>
             </li>
 
-            <li class="image">
+            <li class="images__item">
               <img
                 src="./images/img-two.jpg"
                 alt="Человек выбирает интерефейс на телефоне"
               />
-              <p class="image-description">Мобильные приложения</p>
+              <p class="images__description">Мобильные приложения</p>
             </li>
 
-            <li class="image">
+            <li class="images__item">
               <img
                 class="img"
                 src="./images/img-three.jpg"
                 alt="Человек рисует на планшете"
               />
-              <p class="image-description">Дизайнерские решения</p>
+              <p class="images__description">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Команда -->
-      <section class="section section-color">
+      <section class="section section--color">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-member">
-              <div class="image-thumb">
-                <img src="./images/photo-one.jpg" alt="Фото члена команды" />
-              </div>
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team">
+            <li class="team__member">
+              <img src="./images/photo-one.jpg" alt="Фото члена команды" />
 
               <div class="card-userpic">
                 <h3 class="userpic">Игорь Демьяненко</h3>
@@ -275,10 +279,8 @@
               </div>
             </li>
 
-            <li class="team-member">
-              <div class="image-thumb">
-                <img src="./images/photo-two.jpg" alt="Фото члена команды" />
-              </div>
+            <li class="team__member">
+              <img src="./images/photo-two.jpg" alt="Фото члена команды" />
 
               <div class="card-userpic">
                 <h3 class="userpic">Ольга Репина</h3>
@@ -308,10 +310,8 @@
               </div>
             </li>
 
-            <li class="team-member">
-              <div class="image-thumb">
-                <img src="./images/photo-three.jpg" alt="Фото члена команды" />
-              </div>
+            <li class="team__member">
+              <img src="./images/photo-three.jpg" alt="Фото члена команды" />
 
               <div class="card-userpic">
                 <h3 class="userpic">Николай Тарасов</h3>
@@ -341,10 +341,8 @@
               </div>
             </li>
 
-            <li class="team-member">
-              <div class="image-thumb">
-                <img src="./images/photo-four.jpg" alt="Фото члена команды" />
-              </div>
+            <li class="team__member">
+              <img src="./images/photo-four.jpg" alt="Фото члена команды" />
 
               <div class="card-userpic">
                 <h3 class="userpic">Михаил Ермаков</h3>
