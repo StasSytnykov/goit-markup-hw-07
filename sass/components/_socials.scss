@@ -11,23 +11,23 @@
   color: var(--social-links-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team__social-link:hover,
-.team__social-link:focus {
-  color: var(--accent-color);
-  background-color: var(--style-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .team__social-icon {
   fill: currentColor;
 }
 
-.team__social-link + .team__social-link {
-  margin-left: 10px;
-}
-
-// Социальные линки подвала 
+// Социальные линки подвала
 .social-footer {
   margin-left: 70px;
   padding-top: 72px;
@@ -62,18 +62,18 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-footer__link:hover,
-.social-footer__link:focus {
-  color: var(--accent-color);
-  background-color: var(--style-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .social-footer__icon {
   fill: currentColor;
-}
-
-.social-footer__link + .social-footer__link {
-  margin-left: 10px;
 }

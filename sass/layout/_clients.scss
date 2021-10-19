@@ -18,10 +18,10 @@
   fill: var(--social-links-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  fill: var(--style-color);
-  border-color: var(--style-color);
+  &:hover,
+  &:focus {
+    fill: var(--style-color);
+    border-color: var(--style-color);
+  }
 }

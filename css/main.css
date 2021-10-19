@@ -114,8 +114,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--style-color);
 }
 
@@ -164,8 +163,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--style-color);
 }
 
@@ -212,8 +210,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--style-color);
 }
 
@@ -418,8 +415,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--style-color);
   border-color: var(--style-color);
 }
@@ -449,8 +445,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product__item:hover,
-.product__item:focus {
+.product__item:hover, .product__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -553,15 +548,15 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.1);
-          transform: translate(-50%, -50%) scale(0.1);
 }
 
 .modal {
@@ -703,9 +698,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form__comment:hover,
-.modal-form__comment:focus,
-.modal-form__comment:focus-within {
+.modal-form__comment:hover, .modal-form__comment:focus, .modal-form__comment:focus-within {
   border-color: var(--style-color);
 }
 
@@ -806,6 +799,9 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-footer__input::-webkit-input-placeholder {
@@ -832,6 +828,10 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.form-footer__input:hover, .form-footer__input:focus {
+  border-color: var(--style-color);
+}
+
 .form-footer__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,7 +852,7 @@ img {
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -884,8 +884,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 
@@ -903,8 +902,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--style-color);
 }
 
@@ -928,8 +926,7 @@ img {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__send-button:hover,
-.modal-form__send-button:focus {
+.modal-form__send-button:hover, .modal-form__send-button:focus {
   background: #188ce8;
 }
 
@@ -955,17 +952,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-list__filter-button:focus,
-.button__filter:hover {
-  color: var(--accent-color);
-  background-color: var(--style-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button__filter {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -974,6 +960,13 @@ img {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
+}
+
+.button__filter:focus, .button__filter:hover {
+  color: var(--accent-color);
+  background-color: var(--style-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .team__social-link {
@@ -995,18 +988,17 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__social-link:hover,
-.team__social-link:focus {
+.team__social-link:hover, .team__social-link:focus {
   color: var(--accent-color);
   background-color: var(--style-color);
 }
 
-.team__social-icon {
-  fill: currentColor;
-}
-
 .team__social-link + .team__social-link {
   margin-left: 10px;
+}
+
+.team__social-icon {
+  fill: currentColor;
 }
 
 .social-footer {
@@ -1050,17 +1042,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-footer__link:hover,
-.social-footer__link:focus {
+.social-footer__link:hover, .social-footer__link:focus {
   color: var(--accent-color);
   background-color: var(--style-color);
 }
 
-.social-footer__icon {
-  fill: currentColor;
-}
-
 .social-footer__link + .social-footer__link {
   margin-left: 10px;
+}
+
+.social-footer__icon {
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */
