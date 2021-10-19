@@ -133,7 +133,7 @@
 .modal-form__icon-check {
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--title-text-color);
   border-radius: 4px;
 
   .modal-form__checkbox:checked + & {
@@ -214,30 +214,4 @@
   }
 }
 
-.form-footer__btn {
-  @extend %container-flex;
-  justify-content: center;
 
-  margin-left: 12px;
-  margin-top: 36px;
-  height: 50px;
-  width: 200px;
-
-  background: var(--style-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  color: var(--accent-color);
-}
-
-.form-footer__icon-send {
-  margin-left: 10px;
-  fill: currentColor;
-}

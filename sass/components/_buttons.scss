@@ -1,24 +1,12 @@
 // Кнопка героя
 
 .hero__btn {
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  color: var(--accent-color);
-  background-color: var(--style-color);
+  @extend %button;
 
   padding: 10px 32px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: var(--secondary-style-color);
   }
 }
 
@@ -33,7 +21,7 @@
   height: 30px;
   border-radius: 50%;
 
-  background: #ffffff;
+  background: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
@@ -53,24 +41,11 @@
   height: 50px;
   width: 200px;
 
-  background: var(--style-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  color: var(--accent-color);
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %button;
 
   &:hover,
   &:focus {
-    background: #188ce8;
+    background: var(--secondary-style-color);
   }
 }
 
@@ -115,4 +90,28 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
+
+// Кнопка в футере
+
+.form-footer__btn {
+  @extend %container-flex;
+  justify-content: center;
+
+  margin-left: 12px;
+  margin-top: 36px;
+  height: 50px;
+  width: 200px;
+
+  @extend %button;
+
+  &:hover,
+  &:focus {
+    background: var(--secondary-style-color);
+  }
+}
+
+.form-footer__icon-send {
+  margin-left: 10px;
+  fill: currentColor;
 }
