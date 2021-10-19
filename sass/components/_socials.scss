@@ -1,0 +1,79 @@
+// Социальные линки команды
+
+.team__social-link {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-links-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__social-link:hover,
+.team__social-link:focus {
+  color: var(--accent-color);
+  background-color: var(--style-color);
+}
+
+.team__social-icon {
+  fill: currentColor;
+}
+
+.team__social-link + .team__social-link {
+  margin-left: 10px;
+}
+
+// Социальные линки подвала 
+.social-footer {
+  margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.social-footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  margin-bottom: 20px;
+}
+
+.social-footer__flex {
+  display: flex;
+}
+
+.social-footer__link {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer__link:hover,
+.social-footer__link:focus {
+  color: var(--accent-color);
+  background-color: var(--style-color);
+}
+
+.social-footer__icon {
+  fill: currentColor;
+}
+
+.social-footer__link + .social-footer__link {
+  margin-left: 10px;
+}

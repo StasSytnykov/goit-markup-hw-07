@@ -1,6 +1,6 @@
 /* Utilites */
 
-:root {
+/* :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #fff;
@@ -15,14 +15,27 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   background-color: var(--accent-color);
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
+} */
+/* 
 .container {
   width: 1200px;
   margin-left: auto;
@@ -38,7 +51,7 @@ img {
 
 .hidden {
   visibility: hidden;
-}
+} */
 
 /* Header */
 
@@ -71,7 +84,7 @@ img {
   color: var(--style-color);
 }
 
-.site-nav {
+/* .site-nav {
   display: flex;
   align-items: center;
 }
@@ -116,11 +129,11 @@ img {
 
   background-color: var(--style-color);
   border-radius: 2px;
-}
+} */
 
 /* Contacts */
 
-.contacts {
+/* .contacts {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -157,7 +170,7 @@ img {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 
 /* Hero */
 
@@ -243,7 +256,7 @@ img {
   transform: translate(-50%, -50%) scale(0.1);
 }
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -258,7 +271,7 @@ img {
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .modal__close-btn {
   position: absolute;
@@ -816,14 +829,15 @@ img {
   display: flex;
 }
 
+.logo__style-footer {
+  color: var(--accent-color);
+}
+
 .footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.logo__style-footer {
-  color: var(--accent-color);
-}
 
 .footer-contacts__address {
   margin-bottom: 9px;

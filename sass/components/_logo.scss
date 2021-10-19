@@ -8,8 +8,15 @@
   color: #000;
 
   margin-right: 93px;
+
+  display: flex;
 }
 
 .logo__name--style {
-  color: 'style-color';
+  color: var(--style-color);
+}
+
+
+.logo__style-footer {
+  color: var(--accent-color);
 }
