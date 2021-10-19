@@ -13,7 +13,7 @@
 }
 
 .images__item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - var(--gap));
   margin-left: var(--gap);
   margin-top: var(--gap);
 }

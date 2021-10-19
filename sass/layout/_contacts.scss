@@ -1,9 +1,8 @@
 // Контакты хедера
 
 .contacts {
-  display: flex;
+  @extend %container-flex;
   margin-left: auto;
-  align-items: center;
 }
 
 .contacts__list + .contacts__list {
@@ -30,8 +29,7 @@
 }
 
 .contacts__link {
-  display: flex;
-  align-items: center;
+  @extend %container-flex;
 }
 
 .contacts__icon {

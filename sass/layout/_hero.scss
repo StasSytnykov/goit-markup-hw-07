@@ -5,8 +5,7 @@
   padding-bottom: 280px;
   max-width: 1600px;
 
-  margin-left: auto;
-  margin-right: auto;
+  @extend %position;
 
   background-image: linear-gradient(
       to right,
@@ -29,6 +28,5 @@
 
   max-width: 696px;
   margin-bottom: var(--gap);
-  margin-left: auto;
-  margin-right: auto;
+  @extend %position;
 }

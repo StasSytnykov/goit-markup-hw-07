@@ -12,18 +12,16 @@
 }
 
 .features__background-icon {
-  display: flex;
+  @extend %container-flex;
   background: #f5f4fa;
   border-radius: 4px;
-  align-items: center;
 
   margin-bottom: var(--gap);
   height: 120px;
 }
 
 .features__icon {
-  margin-left: auto;
-  margin-right: auto;
+  @extend %position;
 }
 
 .features__subtitle {

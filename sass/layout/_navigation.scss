@@ -1,11 +1,9 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %container-flex;
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
+  @extend %container-flex;
 }
 
 .site-nav__list + .site-nav__list {

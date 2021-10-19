@@ -48,8 +48,7 @@
 // Кнопка отправки формы в модальном окне
 
 .modal-form__send-button {
-  margin-right: auto;
-  margin-left: auto;
+  @extend %position;
 
   height: 50px;
   width: 200px;
@@ -109,11 +108,11 @@
   border: 1px solid transparent;
   border-radius: 4px;
 
-    &:focus,
-    &:hover {
-      color: var(--accent-color);
-      background-color: var(--style-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    background-color: var(--style-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }

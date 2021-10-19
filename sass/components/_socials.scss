@@ -1,13 +1,12 @@
 // Социальные линки команды
 
 .team__social-link {
-  display: flex;
+  @extend %container-flex;
   border: none;
   border-radius: 50%;
   height: 44px;
   width: 44px;
   justify-content: center;
-  align-items: center;
   color: var(--social-links-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,13 +49,12 @@
 }
 
 .social-footer__link {
-  display: flex;
+  @extend %container-flex;
   border: none;
   border-radius: 50%;
   height: 44px;
   width: 44px;
   justify-content: center;
-  align-items: center;
   color: var(--accent-color);
   background-color: rgba(255, 255, 255, 0.1);
 

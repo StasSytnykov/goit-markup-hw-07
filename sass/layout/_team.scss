@@ -10,7 +10,7 @@
 }
 
 .team__member {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - var(--gap));
   margin-left: var(--gap);
   margin-top: var(--gap);
 
@@ -21,8 +21,8 @@
 }
 
 .team__member-description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
 }
 
 .team__member-name {

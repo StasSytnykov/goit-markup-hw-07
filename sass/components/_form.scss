@@ -11,8 +11,7 @@
 }
 
 .modal-form {
-  margin-left: auto;
-  margin-right: auto;
+  @extend %position;
   width: 448px;
 }
 
@@ -113,10 +112,9 @@
 
 .modal-form__policy {
   position: relative;
-  display: flex;
+  @extend %container-flex;
   margin-top: 20px;
   margin-bottom: var(--gap);
-  align-items: center;
   justify-content: center;
   cursor: pointer;
 }
@@ -217,8 +215,7 @@
 }
 
 .form-footer__btn {
-  display: flex;
-  align-items: center;
+  @extend %container-flex;
   justify-content: center;
 
   margin-left: 12px;
