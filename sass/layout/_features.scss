@@ -13,7 +13,7 @@
 
 .features__background-icon {
   @extend %container-flex;
-  background: #f5f4fa;
+  background: var(--secondary-background-color);
   border-radius: 4px;
 
   margin-bottom: var(--gap);
