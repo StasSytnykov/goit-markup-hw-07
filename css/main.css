@@ -1,43 +1,3 @@
-body {
-  color: var(--primery-text-color);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
-  background-color: var(--accent-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: var(--section-gap);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -93,6 +53,46 @@ img {
   --section-gap: 50px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  color: var(--primery-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: var(--section-gap);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -105,7 +105,7 @@ img {
   display: flex;
 }
 
-.container-flex, .navigation, .site-nav, .contacts, .contacts__link, .features__background-icon, .clients__link, .modal-form__policy, .form-footer__btn, .team__social-link, .social-footer__link {
+.container-flex, .navigation, .site-nav, .contacts, .contacts__link, .features__background-icon, .clients__link, .form-footer__btn, .modal-form__policy, .team__social-link, .social-footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ img {
           align-items: center;
 }
 
-.container, .hero, .hero__title, .features__icon, .modal-form, .modal-form__send-button {
+.container, .hero, .hero__title, .features__icon, .modal-form__send-button, .modal-form {
   margin-left: auto;
   margin-right: auto;
 }
@@ -433,10 +433,6 @@ img {
   border-color: var(--style-color);
 }
 
-.footer {
-  background-color: var(--background-color);
-}
-
 .product__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,6 +523,10 @@ img {
   line-height: 1.87;
 }
 
+.footer {
+  background-color: var(--background-color);
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -546,6 +546,99 @@ img {
 
 .logo__style-footer {
   color: var(--accent-color);
+}
+
+.hero__btn {
+  padding: 10px 32px;
+}
+
+.hero__btn:hover, .hero__btn:focus {
+  background-color: var(--secondary-style-color);
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-btn:hover, .modal__close-btn:focus {
+  fill: var(--style-color);
+}
+
+.modal-form__send-button {
+  height: 50px;
+  width: 200px;
+}
+
+.modal-form__send-button:hover, .modal-form__send-button:focus {
+  background: var(--secondary-style-color);
+}
+
+.button__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: var(--section-gap);
+}
+
+.button__item + .button__item {
+  margin-left: 8px;
+}
+
+.button__filter {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.button__filter:focus, .button__filter:hover {
+  color: var(--accent-color);
+  background-color: var(--style-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.form-footer__btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 12px;
+  margin-top: 36px;
+  height: 50px;
+  width: 200px;
+}
+
+.form-footer__btn:hover, .form-footer__btn:focus {
+  background: var(--secondary-style-color);
+}
+
+.form-footer__icon-send {
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 .backdrop {
@@ -835,99 +928,6 @@ img {
 
 .form-footer__input:hover, .form-footer__input:focus {
   border-color: var(--style-color);
-}
-
-.hero__btn {
-  padding: 10px 32px;
-}
-
-.hero__btn:hover, .hero__btn:focus {
-  background-color: var(--secondary-style-color);
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--accent-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close-btn:hover, .modal__close-btn:focus {
-  fill: var(--style-color);
-}
-
-.modal-form__send-button {
-  height: 50px;
-  width: 200px;
-}
-
-.modal-form__send-button:hover, .modal-form__send-button:focus {
-  background: var(--secondary-style-color);
-}
-
-.button__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: var(--section-gap);
-}
-
-.button__item + .button__item {
-  margin-left: 8px;
-}
-
-.button__filter {
-  color: var(--title-text-color);
-  background-color: var(--secondary-background-color);
-  cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  padding: 6px 22px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.button__filter:focus, .button__filter:hover {
-  color: var(--accent-color);
-  background-color: var(--style-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.form-footer__btn {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 12px;
-  margin-top: 36px;
-  height: 50px;
-  width: 200px;
-}
-
-.form-footer__btn:hover, .form-footer__btn:focus {
-  background: var(--secondary-style-color);
-}
-
-.form-footer__icon-send {
-  margin-left: 10px;
-  fill: currentColor;
 }
 
 .team__social-link {

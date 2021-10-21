@@ -18,3 +18,9 @@ body {
   color: var(--title-text-color);
   margin-bottom: var(--section-gap);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

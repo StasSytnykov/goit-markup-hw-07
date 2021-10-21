@@ -1,24 +1,6 @@
-@import 'base/common';
-@import 'base/reset';
-@import 'base/fonts';
-@import 'utils/variables';
-@import 'utils/container';
-@import 'utils/template';
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/contacts';
-@import 'layout/hero';
-@import 'layout/features';
-@import 'layout/classes';
-@import 'layout/team';
-@import 'layout/clients';
-@import 'layout/footer';
-@import 'layout/products';
-@import 'components/logo';
-@import 'components/backdrop';
-@import 'components/modal';
-@import 'components/form';
-@import 'components/buttons';
-@import 'components/socials';
+@import 'base/index';
+@import 'utils/index';
+@import 'layout/index';
+@import 'components/index';
 
 
