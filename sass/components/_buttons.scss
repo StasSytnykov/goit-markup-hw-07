@@ -73,10 +73,7 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  @include font (16px, 1.62, 500);
 
   padding: 6px 22px;
 
@@ -95,8 +92,7 @@
 // Кнопка в футере
 
 .form-footer__btn {
-  @extend %container-flex;
-  justify-content: center;
+  @extend %container-justify;
 
   margin-left: 12px;
   margin-top: 36px;

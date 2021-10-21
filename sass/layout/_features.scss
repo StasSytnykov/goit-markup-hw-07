@@ -25,11 +25,11 @@
 }
 
 .features__subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font (14px, 1.14, 700);
   text-transform: uppercase;
+
   color: var(--title-text-color);
+  
   margin-bottom: 10px;
 }
 

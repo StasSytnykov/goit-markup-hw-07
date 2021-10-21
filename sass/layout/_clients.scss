@@ -7,8 +7,7 @@
 }
 
 .clients__link {
-  @extend %container-flex;
-  justify-content: center;
+  @extend %container-justify;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-links-color);

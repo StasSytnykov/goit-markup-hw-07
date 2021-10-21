@@ -11,9 +11,7 @@ body {
 }
 
 .section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, 1.16, 700);
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: var(--section-gap);
@@ -23,4 +21,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.hidden {
+  visibility: hidden;
 }
